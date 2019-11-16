@@ -1,0 +1,13 @@
+<div class="card" *ngFor="let tapa of tapas">
+    <div class="row align-items-center">
+        <div class="col-3">
+            <img src="assets/images/tapa{{ tapa.id }}.png" class="img-thumbnail">
+        </div>
+        <div class="col">
+            <div class="card-body">
+                <h5 class="card-title"> {{ tapa.restaurant.name | uppercase }}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{ tapa.name }}</h6>
+            </div>
+        </div>
+    </div>
+</div>

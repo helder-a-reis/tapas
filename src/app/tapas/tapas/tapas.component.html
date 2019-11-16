@@ -1,0 +1,8 @@
+<button class="btn btn-outline-info" (click)="changeView('list')">Lista</button>
+<button class="btn btn-outline-info" (click)="changeView('map')">Mapa</button>
+
+<app-tapas-list *ngIf="view == 'list'" [tapas]="tapas"></app-tapas-list>
+<app-tapas-map *ngIf="view == 'map'" [tapas]="tapas"></app-tapas-map>
+
+
+

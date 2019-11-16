@@ -1,0 +1,91 @@
+{
+  "restaurants" : [{
+	"id" : 1,
+	"name" : "Casares",
+    "address" : "Avenida Padre Claret, 2, Segovia",
+    "latitude" : 40.947701,
+    "longitude" : -4.116929
+  }, {
+	"id" : 2,
+	"name" : "Restaurante José",
+    "address" : "Plaza Mayor, 4, 40001 Segovia",
+    "latitude" : 40.950628,
+    "longitude" : -4.123765    
+  }, {
+	"id" : 3,
+	"name" : "Asador Maribel",
+    "address" : "Av. Padre Claret, 16, 40001 Segovia",
+    "latitude" : 40.948498,
+    "longitude" : -4.114639    
+  },{
+	"id" : 4,
+	"name" : "Asador El Hidalgo",
+    "address" : "Calle José Canalejas, 5, 40001 Segovia",
+    "latitude" : 40.949299,
+    "longitude" : -4.122069
+  }, {
+	"id" : 5,
+	"name" : "C'oma Restobar",
+    "address" : "Calle Isabel la Católica, 1, 40001 Segovia",
+    "latitude" : 40.949970, 
+    "longitude" : -4.123888
+  },  {
+	"id" : 6,
+	"name" : "Restaurante José Maria",
+    "address" : "Calle Cronista Lecea, 11, 40001 Segovia",
+    "latitude" : 40.950729, 
+    "longitude" : -4.122617
+  }  ,  {
+	"id" : 7,
+	"name" : "Restaurante Pasapán",
+    "address" : "Calle Colón, 5, 40001 Segovia",
+    "latitude" : 40.950391, 
+    "longitude" : -4.121824
+  }
+  ],
+  "tapas" : [ {
+	"id": 1,
+	"name" : "Hornazo de cordero",
+	"description" : "Hornazo relleno de Tallín de cordero sobre pozo de arroz y su jugo",
+	"hours" : "Todos los días: de 20.00 h. a 22.00 h.",
+	"restaurantId" : 1
+  }, {
+	"id": 2,
+	"name" : "Canelón de pollo",
+	"description" : "Canelón de pollo de corral con bechamel de trufa y gratinado de queso D.O.Tierra de sabor",
+	"hours" : "Entre diario: de 11.00 h. a 17.00 h. y de 20.00 h. a 00.00 h. Fin de semana: de 11.00 h. a 14.00 h. y de 20.00 h. a 22.30 h.",
+	"restaurantId" : 2  
+  }, {
+	"id": 3,
+	"name" : "Carne adobada",
+	"description" : "Carne adobada y asada en nuestro Horno de Leña acompañada de puré de maíz de la tierra con agridulce de verduras",
+	"hours" : "Todos los días hasta fin de existencias",
+	"restaurantId" : 3  
+  }, {
+	"id": 4,
+	"name" : "Enchilada de pollo de corral",
+	"description" : "Enchilada de pollo de corral",
+	"hours" : "Todos los días: de 12.00 h. a fin de existencias y de 20.00 h. a a fin de existencias",
+	"restaurantId" : 4  
+  },{
+	"id": 5,
+	"name" : "Huevo escalfado",
+	"description" : "Huevo escalfado sobre cama de puré trufado y rizado de torrezno",
+	"hours" : " ",
+	"restaurantId" : 5
+  },{
+	"id": 6,
+	"name" : "Taco de cordero",
+	"description" : "Taco de Cordero ‘Segolechal I.G.P.’ con verduras breseadas, puré de apionabo y crujiente de manzana",
+	"hours" : "Todos los días: hasta las 23.00 h.",
+	"restaurantId" : 6
+  },{
+	"id": 7,
+	"name" : "Guise de pollo",
+	"description" : "Guiso de pollo marinado, emulsión de yogur y miel, cítricos y cebolla roja encurtida",
+	"hours" : " ",
+	"restaurantId" : 7
+  }
+  
+  ]
+}
