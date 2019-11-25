@@ -1,0 +1,104 @@
+{
+  "restaurants" : [{
+	"id" : 1,
+	"name" : "Casares",
+    "address" : "Avenida Padre Claret, 2, Segovia",
+    "latitude" : 40.947701,
+    "longitude" : -4.116929
+  }, {
+	"id" : 2,
+	"name" : "Restaurante José",
+    "address" : "Plaza Mayor, 4, 40001 Segovia",
+    "latitude" : 40.950628,
+    "longitude" : -4.123765    
+  }, {
+	"id" : 3,
+	"name" : "Asador Maribel",
+    "address" : "Av. Padre Claret, 16, 40001 Segovia",
+    "latitude" : 40.948498,
+    "longitude" : -4.114639    
+  },{
+	"id" : 4,
+	"name" : "Asador El Hidalgo",
+    "address" : "Calle José Canalejas, 5, 40001 Segovia",
+    "latitude" : 40.949299,
+    "longitude" : -4.122069
+  }, {
+	"id" : 5,
+	"name" : "C'oma Restobar",
+    "address" : "Calle Isabel la Católica, 1, 40001 Segovia",
+    "latitude" : 40.949970, 
+    "longitude" : -4.123888
+  },  {
+	"id" : 6,
+	"name" : "Restaurante José Maria",
+    "address" : "Calle Cronista Lecea, 11, 40001 Segovia",
+    "latitude" : 40.950729, 
+    "longitude" : -4.122617
+  }  ,  {
+	"id" : 7,
+	"name" : "Restaurante Pasapán",
+    "address" : "Calle Colón, 5, 40001 Segovia",
+    "latitude" : 40.950391, 
+    "longitude" : -4.121824
+  },  {
+	"id" : 8,
+	"name" : "La Nicolasa",
+    "address" : "Plaza Potro, 2, 40001 Segovia",
+    "latitude" : 40.950840, 
+    "longitude" : -4.123563
+  },  {
+	"id" : 9,
+	"name" : "La Trébede",
+    "address" : "Plaza Dr. Laguna, 2, 40001 Segovia",
+    "latitude" : 40.950482, 
+    "longitude" : -4.121466
+  },  {
+	"id" : 10,
+	"name" : "Las Cuevas de Duque",
+    "address" : "Calle Sta. Engracia, 6, 40001 Segovia",
+    "latitude" : 40.947648, 
+    "longitude" : -4.119740
+   },  {
+	"id" : 11,
+	"name" : "La Codorniz",
+    "address" : "Calle Hermanos Barral, 1-3, 40001 Segovia",
+    "latitude" : 40.946323, 
+    "longitude" : -4.120346
+   }
+
+  ],
+  "tapas" : [ {
+	"id": 1,
+	"name" : "Crema de remolacha",
+	"description" : "Crema de remolacha y puerros con taquitos de salmón marinada y pan de ajo",
+	"hours" : "1",
+	"restaurantId" : 1
+  }, {
+	"id": 2,
+	"name" : "Garbanzos con callos",
+	"description" : "Garbanzos con callos a la Segoviana",
+	"hours" : "",
+	"restaurantId" : 8  
+  }, {
+	"id": 3,
+	"name" : "Garbanzos con bacalao",
+	"description" : "Garbanzos de Zamarramala con setas y bacalao",
+	"hours" : "",
+	"restaurantId" : 9 
+  }, {
+	"id": 4,
+	"name" : "Crema fina de calabaza",
+	"description" : "Crema fina de calabaza con picatoste de queso, espinaca en textura y cruijiente de jamón",
+	"hours" : "",
+	"restaurantId" : 10  
+  },{
+	"id": 5,
+	"name" : "Crema de calabaza con huevo",
+	"description" : "Crema de calabaza con huevo Pochet de Codorniz, picatostes, cruijiente de cebolla y polvo de pistachos",
+	"hours" : " ",
+	"restaurantId" : 11
+  }
+  
+  ]
+}

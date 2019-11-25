@@ -24,9 +24,13 @@ L.Marker.prototype.options.icon = iconDefault;
   styleUrls: ['./tapas-map.component.css']
 })
 export class TapasMapComponent implements OnInit {
-  private map;
   @Input() tapas: Tapa[];
+  @Input() focusedTapa?: number;
+
+  private map;
+  
   segovia = [40.9498125, -4.1249724];
+  
 
   constructor() { }
 
@@ -39,21 +43,34 @@ export class TapasMapComponent implements OnInit {
     }).addTo(this.map);
     
     this.addTapasToMap();
+
   }
 
 
   addTapasToMap() {
-    let layers = [];
+    let markers = [];
     
     this.tapas.forEach(tapa => {      
       let marker = L.marker([tapa.restaurant.latitude, tapa.restaurant.longitude]).addTo(this.map);
       marker.bindPopup(tapa.name + ' (' + tapa.restaurant.name + ')');
-      layers.push(marker);
+      if (this.focusedTapa && tapa.id == this.focusedTapa){
+        marker.openPopup();
+        this.map.flyTo([tapa.restaurant.latitude,tapa.restaurant.longitude], 18);
+      }
+      markers.push(marker);
     });
+    
+    if (!this.focusedTapa) {
+      this.focusMap(markers);
+    }
 
-    //zoom map to fit added markers
-    let group = L.featureGroup(layers);
-    this.map.fitBounds(group.getBounds());
-
+    
   }
+
+  focusMap(markers: any[]) {
+    //zoom map to fit added markers
+    let group = L.featureGroup(markers);
+    this.map.fitBounds(group.getBounds());
+  }
+
 }

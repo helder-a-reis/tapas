@@ -11,7 +11,8 @@ import { Subscription } from 'rxjs';
 })
 export class TapasComponent implements OnInit, OnDestroy {
   tapas: Tapa[];
-  subs: Subscription;  
+  subs: Subscription;
+  focusedTapa: number;
   view = '';
 
   constructor(private tapasService: TapaService) { }
@@ -24,7 +25,15 @@ export class TapasComponent implements OnInit, OnDestroy {
   }
 
   changeView(view: string) {
+    if (view == 'list') {
+      this.focusedTapa = null;
+    }
     this.view = view;
+  }
+
+  focusMap(tapaId: number) {
+    this.focusedTapa = tapaId;
+    this.changeView('map');
   }
 
   ngOnDestroy() {

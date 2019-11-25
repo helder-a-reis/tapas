@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Tapa } from '../Tapa.model';
+import { Tapa } from '../../Tapa.model';
 
 @Component({
   selector: 'app-tapa-detail',

@@ -38,8 +38,7 @@ export class TapaService implements OnInit {
     tapas.forEach(tapa => {
       let restaurant = restaurants.find(x => x.id == tapa.restaurantId);
       tapa.restaurant = restaurant;
-    });
-    //console.log("finished combining: " + JSON.stringify(tapas, null, 4));
+    });    
     return tapas;
   }
 }
